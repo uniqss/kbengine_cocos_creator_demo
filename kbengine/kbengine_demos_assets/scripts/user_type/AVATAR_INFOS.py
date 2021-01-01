@@ -76,3 +76,4 @@ class AVATAR_INFOS_LIST_PICKLER:
 	def isSameType(self, obj):
 		return isinstance(obj, TAvatarInfosList)
 
+avatar_info_list_inst = AVATAR_INFOS_LIST_PICKLER()

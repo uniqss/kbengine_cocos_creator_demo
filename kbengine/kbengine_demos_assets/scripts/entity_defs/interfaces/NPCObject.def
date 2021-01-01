@@ -11,7 +11,7 @@
 		<spawnPos>
 			<Type>			VECTOR3			</Type>
 			<Flags>			CELL_PRIVATE		</Flags>
-			<Default>		(0,0,0)		</Default>
+			<Default>		30.0 50.0 100		</Default>
 		</spawnPos>
 
 		<entityNO>

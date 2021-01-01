@@ -5,6 +5,7 @@
 			<Flags>			CELL_PRIVATE			</Flags>
 			<Persistent>		true				</Persistent>
 		</skills>
+
 	</Properties>
 
 	<CellMethods>

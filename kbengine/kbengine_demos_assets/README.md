@@ -10,7 +10,7 @@
 
 ## 启动服务端
 
-使用固定参数来启动：(参数的意义:http://www.kbengine.org/cn/docs/startup_shutdown.html)
+使用固定参数来启动：(参数的意义:http://kbengine.github.io/cn/docs/startup_shutdown.html)
 	
 	首先进入对应的资产库kbengine/kbengine_demos_assets目录中，然后在命令行执行如下命令：
 
@@ -25,7 +25,7 @@
 
 快速杀死服务端进程:
 
-	首先进入对应的资产库kbengine/kbengine_demos_assets目录中，然后在命令行执行如下命令： 
+	首先进入对应的资产库kbengine/kbengine_demos_assets目录中，然后在命令行执行如下命令：
 
 	Linux:
 		kill_server.sh
@@ -41,8 +41,3 @@
 
 	Windows:
 		safe_kill.bat
-
-
-## 直接从代码定义实体（不需要def文件）
-
-https://github.com/kbengine/kbengine_demos_assets/tree/py_entity_def

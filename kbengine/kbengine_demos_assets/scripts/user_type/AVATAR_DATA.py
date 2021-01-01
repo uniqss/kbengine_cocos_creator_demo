@@ -31,3 +31,5 @@ class AVATAR_DATA_PICKLER:
 
 	def isSameType(self, obj):
 		return isinstance(obj, TAvatarData)
+
+inst = AVATAR_DATA_PICKLER()

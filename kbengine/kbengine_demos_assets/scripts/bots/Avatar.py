@@ -59,9 +59,6 @@ class Avatar(KBEngine.Entity,
 		当这个entity被引擎定义为角色时被调用
 		"""
 		DEBUG_MSG("%s::onBecomePlayer: %i" % (self.__class__.__name__, self.id))
-
-	def onBecomeNonPlayer(self):
-		DEBUG_MSG("%s::onBecomeNonPlayer: %i" % (self.__class__.__name__, self.id))
 		
 	def onJump(self):
 		"""
@@ -82,7 +79,6 @@ class PlayerAvatar(Avatar):
 		self.testType = random.randint(0, 2) # 测试类别， 0：随机移动， 1：找目标攻击， 2：测试传送
 		self.changeTestTypeTime = time.time()
 		self.spawnPosition = Math.Vector3( self.position )
-		self.cbID = 0
 
 	def onBecomePlayer( self ):
 		"""
@@ -95,10 +91,7 @@ class PlayerAvatar(Avatar):
 		# 这里手动进行初始化一下
 		self.__init__()
 		
-		self.cbID = KBEngine.callback(1, self.update)
-
-	def onBecomeNonPlayer(self):
-		KBEngine.cancelCallback(self.cbID)
+		KBEngine.callback(1, self.update)
 
 	def onEnterSpace(self):
 		"""
@@ -193,7 +186,7 @@ class PlayerAvatar(Avatar):
 		if self.isDestroyed:
 			return
 
-		self.cbID = KBEngine.callback(1, self.update)
+		KBEngine.callback(1, self.update)
 		
 		# 如果自己已经死亡了，那么延时一下复活
 		if self.isState(GlobalDefine.ENTITY_STATE_DEAD):
