@@ -1,3 +1,3 @@
-xcopy E:\projects\kbengine\kbe\* .\kbengine\kbe\ /s /q /y
+xcopy ..\kbengine\kbe\* .\kbengine\kbe\ /s /q /y
 
 pause
