@@ -3,3 +3,5 @@
 /kbengine/kbengine_demos_assets/kbengine_unity3d_plugins
 /kbengine/kbengine_demos_assets/kbengine_ue4_plugins
 __pycache__
+/client/temp
+/client/library
